@@ -43,7 +43,7 @@ jobs:
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/richclub:latest
         
   deploy:
-    if : github.ref == 'refs/heads/develop'
+    if : github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     steps:
