@@ -1,4 +1,4 @@
-package com.sparta.myproject.healthCheck;
+package com.example.demo.healthCheck;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +10,7 @@ import java.util.TreeMap;
 
 @RestController
 
-public class HeathCheckController {
+public class HealthCheckController {
     @Value(value="${server.env}")
     private String env;
     @Value(value="${server.port}")
